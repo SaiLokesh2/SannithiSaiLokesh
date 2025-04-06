@@ -188,7 +188,7 @@ header.sticky {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(to right, #f8f9fa 60%, #e9ecef 40%);
+    background: #f8f9fa;
     padding-top: 80px;
 }
 
@@ -332,6 +332,61 @@ header.sticky {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+}
+
+/* Education styles */
+.education {
+    margin-top: 40px;
+}
+
+.education h3 {
+    margin-bottom: 20px;
+}
+
+.education ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.education li {
+    margin-bottom: 20px;
+}
+
+.education h4 {
+    margin-bottom: 5px;
+}
+
+/* Soft Skills styles */
+.soft-skills {
+    margin-top: 40px;
+}
+
+.soft-skills h3 {
+    margin-bottom: 20px;
+}
+
+.soft-skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.soft-skills li {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+/* Coding Skills styles */
+.coding-skills {
+    margin-top: 40px;
+}
+
+.coding-skills h3 {
+    margin-bottom: 20px;
 }
 
 .filter-btn {
@@ -616,6 +671,75 @@ header.sticky {
 textarea.form-control {
     resize: vertical;
     min-height: 150px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(var(--primary-color-rgb), 0.1);
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.btn-submit {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.btn-submit:hover {
+    background-color: var(--primary-color-dark);
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
 }
 
 /* Footer */
